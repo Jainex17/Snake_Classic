@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: rgba(108, 108, 103, 0.824); 
+    /* background: linear-gradient(white,black , white); */
+    
+}
+#board{
+    height: 60vh;
+    width: 40vw;
+    border: 10px white;
+    border-style: groove;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    background-color: black; 
+    /* background-image: url('../img/background.png'); */
+    cursor: cell;
+    box-shadow: 10px 10px 20px black;
+}
+
+.head{
+    background-color: white;
+}
+
+/* .headleft{
+    background-image: url('../img/head_left.png');
+    background-size: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+}
+.headright{
+    background-image: url('../img/head_right.png');
+    background-size: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+}
+.headup{
+    background-image: url('../img/head_up.png');
+    background-size: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+}
+.headdown{
+    background-image: url('../img/head_down.png');
+    background-size: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+} */
+.snakebody{
+    background-color: rgb(123, 123, 123);
+}
+
+.food{
+    /* background-color: red; */
+    /* border-radius: 20px; */
+    background-image: url('../img/apple.png');
+    background-size: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+}
+h1{
+    position: absolute;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.scores{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: 30px;
+    color: white;
+    border: 2px white solid;
+    padding: 10px 30px;
+    /* background-color: #333; */
+    background-image: url('../img/background.png');
+    cursor: cell;
+    box-shadow: 4px 4px 10px rgb(0, 150, 0);
+}
+img{
+    width: 80px; height: 50px; object-fit: cover;}
+.scorediv{
+    font-size: 17px;
+    padding: 20px 0;
+}
+.highscorediv{
+    font-size: 17px;
+    border-top: 3px white solid;
+    padding: 20px 0;
+}
