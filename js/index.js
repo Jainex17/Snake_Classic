@@ -149,6 +149,7 @@ window.addEventListener("keydown", e =>{
             break;
 
         default:
-            break;
+            // alert("don't use other keys🤨")    
+        break;
     }
 });

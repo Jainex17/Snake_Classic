@@ -95,7 +95,7 @@ h1{
     top: 30px;
     color: white;
     border: 2px white solid;
-    padding: 10px 30px;
+    padding: 0px 15px;
     /* background-color: #333; */
     background-image: url('../img/background.png');
     cursor: cell;
@@ -111,4 +111,21 @@ img{
     font-size: 17px;
     border-top: 3px white solid;
     padding: 20px 0;
+}
+
+
+@media only screen and (max-width:768px){
+    .scores{ display: none; }
+    h1{ display: none; }
+    .body{
+        display: none;
+    }
+    body::before{
+        content: "Play In Big Screen";
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 }
