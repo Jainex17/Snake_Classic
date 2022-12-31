@@ -4,7 +4,7 @@ This is a DOM-based game of Snake that I wrote in JavaScript over a decade ago. 
 
 # Play the Game Online!
 
-jainex17.github.io/snake-game/
+[Play Snake Game](jainex17.github.io/snake-game/)
 
 ---
 Try to beat my highscore 23 😛
